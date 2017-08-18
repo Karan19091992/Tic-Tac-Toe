@@ -14,6 +14,8 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TicTacToeUI extends JFrame {
 
@@ -51,9 +53,9 @@ public class TicTacToeUI extends JFrame {
 		panel.add(panel_1);
 		panel_1.setLayout(new BorderLayout(0, 0));
 		
-		JButton button1 = new JButton("");
-		button1.setFont(new Font("Tahoma", Font.BOLD, 50));
-		panel_1.add(button1, BorderLayout.CENTER);
+		JButton btn1 = new JButton("");
+		btn1.setFont(new Font("Tahoma", Font.BOLD, 50));
+		panel_1.add(btn1, BorderLayout.CENTER);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBorder(new LineBorder(new Color(0, 0, 0), 2));
@@ -175,6 +177,23 @@ public class TicTacToeUI extends JFrame {
 		panel_16.setLayout(new BorderLayout(0, 0));
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				/* Karan: reset values for all the buttons */
+				
+				btn1.setText(null);
+				btn2.setText(null);
+				btn3.setText(null);
+				btn4.setText(null);
+				btn5.setText(null);
+				btn6.setText(null);
+				btn7.setText(null);
+				btn8.setText(null);
+				btn9.setText(null);
+			
+			}
+		});
 		btnReset.setFont(new Font("Tahoma", Font.BOLD, 50));
 		panel_16.add(btnReset, BorderLayout.CENTER);
 		
