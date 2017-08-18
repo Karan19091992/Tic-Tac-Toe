@@ -13,6 +13,7 @@ import java.awt.GridLayout;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.SwingConstants;
 
 public class TicTacToeUI extends JFrame {
 
@@ -50,24 +51,25 @@ public class TicTacToeUI extends JFrame {
 		panel.add(panel_1);
 		panel_1.setLayout(new BorderLayout(0, 0));
 		
-		JButton button = new JButton("");
-		panel_1.add(button, BorderLayout.CENTER);
+		JButton button1 = new JButton("");
+		button1.setFont(new Font("Tahoma", Font.BOLD, 50));
+		panel_1.add(button1, BorderLayout.CENTER);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_2);
 		panel_2.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_1 = new JButton("");
-		panel_2.add(button_1, BorderLayout.CENTER);
+		JButton btn2 = new JButton("");
+		panel_2.add(btn2, BorderLayout.CENTER);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_3);
 		panel_3.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_2 = new JButton("");
-		panel_3.add(button_2, BorderLayout.CENTER);
+		JButton btn3 = new JButton("");
+		panel_3.add(btn3, BorderLayout.CENTER);
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setBorder(new LineBorder(new Color(0, 0, 0), 2));
@@ -83,11 +85,13 @@ public class TicTacToeUI extends JFrame {
 		panel.add(panel_5);
 		panel_5.setLayout(new BorderLayout(0, 0));
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 40));
-		panel_5.add(lblNewLabel, BorderLayout.CENTER);
+		JLabel lblScoreX = new JLabel("0");
+		lblScoreX.setHorizontalAlignment(SwingConstants.CENTER);
+		lblScoreX.setFont(new Font("Tahoma", Font.BOLD, 40));
+		panel_5.add(lblScoreX, BorderLayout.CENTER);
 		
 		JPanel panel_6 = new JPanel();
+		panel_6.setBackground(Color.GREEN);
 		panel_6.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_6);
 		panel_6.setLayout(new BorderLayout(0, 0));
@@ -97,24 +101,24 @@ public class TicTacToeUI extends JFrame {
 		panel.add(panel_7);
 		panel_7.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_10 = new JButton("");
-		panel_7.add(button_10, BorderLayout.CENTER);
+		JButton btn4 = new JButton("");
+		panel_7.add(btn4, BorderLayout.CENTER);
 		
 		JPanel panel_8 = new JPanel();
 		panel_8.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_8);
 		panel_8.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_11 = new JButton("");
-		panel_8.add(button_11, BorderLayout.CENTER);
+		JButton btn5 = new JButton("");
+		panel_8.add(btn5, BorderLayout.CENTER);
 		
 		JPanel panel_9 = new JPanel();
 		panel_9.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_9);
 		panel_9.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_9 = new JButton("");
-		panel_9.add(button_9, BorderLayout.CENTER);
+		JButton btn6 = new JButton("");
+		panel_9.add(btn6, BorderLayout.CENTER);
 		
 		JPanel panel_10 = new JPanel();
 		panel_10.setBorder(new LineBorder(new Color(0, 0, 0), 2));
@@ -130,11 +134,13 @@ public class TicTacToeUI extends JFrame {
 		panel.add(panel_11);
 		panel_11.setLayout(new BorderLayout(0, 0));
 		
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 40));
-		panel_11.add(lblNewLabel_1, BorderLayout.CENTER);
+		JLabel lblScoreY = new JLabel("0");
+		lblScoreY.setHorizontalAlignment(SwingConstants.CENTER);
+		lblScoreY.setFont(new Font("Tahoma", Font.BOLD, 40));
+		panel_11.add(lblScoreY, BorderLayout.CENTER);
 		
 		JPanel panel_12 = new JPanel();
+		panel_12.setBackground(Color.RED);
 		panel_12.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_12);
 		panel_12.setLayout(new BorderLayout(0, 0));
@@ -144,24 +150,24 @@ public class TicTacToeUI extends JFrame {
 		panel.add(panel_13);
 		panel_13.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_12 = new JButton("");
-		panel_13.add(button_12, BorderLayout.CENTER);
+		JButton btn7 = new JButton("");
+		panel_13.add(btn7, BorderLayout.CENTER);
 		
 		JPanel panel_14 = new JPanel();
 		panel_14.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_14);
 		panel_14.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_13 = new JButton("");
-		panel_14.add(button_13, BorderLayout.CENTER);
+		JButton btn8 = new JButton("");
+		panel_14.add(btn8, BorderLayout.CENTER);
 		
 		JPanel panel_15 = new JPanel();
 		panel_15.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		panel.add(panel_15);
 		panel_15.setLayout(new BorderLayout(0, 0));
 		
-		JButton button_14 = new JButton("");
-		panel_15.add(button_14, BorderLayout.CENTER);
+		JButton btn9 = new JButton("");
+		panel_15.add(btn9, BorderLayout.CENTER);
 		
 		JPanel panel_16 = new JPanel();
 		panel_16.setBorder(new LineBorder(new Color(0, 0, 0), 2));
